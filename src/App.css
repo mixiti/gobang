@@ -1,0 +1,54 @@
+/* 整个页面的浅色背景 */
+.container {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0; /* 设置浅色背景 */
+    min-height: 100vh; /* 让页面高度填满整个屏幕 */
+    margin: 0;
+  }
+  
+  /* 棋盘区域 */
+  .board {
+    position: relative;
+    width: 500px; /* 可以根据棋盘大小动态调整 */
+    height: 500px;
+    border: 2px solid #333;
+    margin: 20px auto;
+    background-color: #fff; /* 棋盘区域背景为纯白色，避免与浅色背景冲突 */
+  }
+  
+  /* 棋格样式 */
+  .cell {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+  }
+  
+  .cell.black {
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .cell.white {
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  /* 按钮样式 */
+  .restart {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .restart:hover {
+    background-color: #0056b3;
+  }
+  
